@@ -1,14 +1,8 @@
-import React from 'react'
+import logo from '../assets/logo.png'
 
 const Logo = ({ nav }) => (
-  <div onClick={() => nav('/')} style={{ display: 'flex', alignItems: 'center', gap: 8, cursor: 'pointer' }}>
-    <div style={{ width: 36, height: 36, background: 'linear-gradient(135deg,#f07c1f,#d96a10)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-        <path d="M12 2C8 6 6 9 6 12a6 6 0 0012 0c0-3-2-6-6-10z" fill="white"/>
-        <path d="M12 8c-2 2-3 4-3 5.5a3 3 0 006 0C15 12 14 10 12 8z" fill="rgba(255,210,120,0.85)"/>
-      </svg>
-    </div>
-    <span style={{ fontWeight: 700, fontSize: 15, color: '#fff' }}>Safety World</span>
+  <div onClick={() => nav('/')} style={{ display: 'flex', alignItems: 'center', gap: 8, cursor: 'pointer', marginBottom: 20 }}>
+    <img src={logo} alt="Safety World Dubai" style={{ height: 44, width: 'auto' }} />
   </div>
 )
 
