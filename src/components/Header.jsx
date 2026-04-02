@@ -21,7 +21,7 @@ export default function Header({ nav, page }) {
   const Logo = () => (
     <div onClick={() => { nav('/'); setMenuOpen(false) }}
       style={{ display: 'flex', alignItems: 'center', gap: 10, cursor: 'pointer', flexShrink: 0 }}>
-      <img src={logo} alt="Safety World Dubai" style={{ height: 40, width: 'auto' }} />
+      <img src={logo} alt="Safety World Dubai" style={{ height: 56, width: 'auto' }} />
     </div>
   )
 
@@ -35,7 +35,7 @@ export default function Header({ nav, page }) {
       <div style={{
         maxWidth: 1100, margin: '0 auto', padding: '0 24px',
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-        height: 60, gap: 16,
+        height: 80, gap: 16,
       }}>
         <Logo />
 
