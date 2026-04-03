@@ -144,7 +144,7 @@ export default function FireSafety({ nav }) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            Professional MEP (Mechanical, Electrical, Plumbing) and fire safety services for residential and commercial properties
+            Professional MEP (Mechanical, Electrical, Plumbing) and fire safety services for commercial and industrial properties
           </motion.p>
           <motion.button 
             className="btn btn-orange" 
@@ -192,7 +192,7 @@ export default function FireSafety({ nav }) {
           {/* Electrical Works */}
           <ServiceSection
             icon="⚡" title="Electrical Works"
-            desc="Professional electrical installation and maintenance services for commercial and residential buildings across the UAE."
+            desc="Professional electrical installation and maintenance services for commercial and industrial buildings across the UAE."
             checks={['Power Distribution','Cable Installation','Switchboard Setup','Lighting Installation','Emergency Power Systems','Electrical Safety Inspections']}
             img={IMGS.electrical} imgRight={true}
             bg="linear-gradient(135deg,#2a3a4a,#1a2a3a)"
@@ -203,7 +203,7 @@ export default function FireSafety({ nav }) {
           {/* Plumbing Works */}
           <ServiceSection
             icon="🔧" title="Plumbing Works"
-            desc="Complete plumbing solutions for residential and commercial properties. From installation to maintenance."
+            desc="Complete plumbing solutions for industrial and commercial properties. From installation to maintenance."
             checks={['Water Supply Systems','Drainage Systems','Pipe Installation','Water Tank Setup','Maintenance & Repairs','Emergency Plumbing']}
             img={IMGS.plumbing} imgRight={false}
             bg="linear-gradient(135deg,#1a3a4a,#0a2a3a)"
@@ -243,7 +243,6 @@ export default function FireSafety({ nav }) {
           <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }} className="grid-4">
             {[
               ['🛡','Money Back Guarantee','100% satisfaction guaranteed or your money back'],
-              ['🕐','One Month Free Trial','Experience our services risk free for 30 days'],
               ['👥','30 Minute Free Consultation','Expert guidance tailored to your specific needs'],
               ['⭐','24/7 Support','Round the clock monitoring and support'],
             ].map(([ic,t,d]) => (
@@ -269,8 +268,8 @@ export default function FireSafety({ nav }) {
             Contact us today for a free consultation with our fire safety &amp; MEP experts
           </p>
           <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a href="tel:+97158571449" className="btn btn-outline-white" style={{ padding: '12px 28px' }}>Call: +971 58 571 4496</a>
-            <a href="mailto:support@safetyworld.ae" className="btn btn-outline-white" style={{ padding: '12px 28px' }}>Email Us</a>
+            <a href="tel:971585714969" className="btn btn-outline-white" style={{ padding: '12px 28px' }}>Call: +971 58 571 4969</a>
+            <a href="mailto:Support@safetyworld.ae" className="btn btn-outline-white" style={{ padding: '12px 28px' }}>Email Us</a>
           </div>
         </motion.div>
       </section>

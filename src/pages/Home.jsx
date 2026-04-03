@@ -104,7 +104,7 @@ function ContactForm() {
         <div className="form-group"><label>Email *</label><input type="email" name="email" required value={form.email} onChange={onChange} placeholder="your@email.com" /></div>
       </div>
       <div className="form-row">
-        <div className="form-group"><label>Phone *</label><input name="phone" required value={form.phone} onChange={onChange} placeholder="+971 58 571 4496" /></div>
+        <div className="form-group"><label>Phone *</label><input name="phone" required value={form.phone} onChange={onChange} placeholder="+971 58 571 4969" /></div>
         <div className="form-group"><label>Company</label><input name="company" value={form.company} onChange={onChange} placeholder="Your company name" /></div>
       </div>
       <div className="form-group">
@@ -215,7 +215,6 @@ export default function Home({ nav }) {
           <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }} className="grid-4">
             {[
               ['🛡','Money Back Guarantee','100% satisfaction guaranteed or your money back'],
-              ['🕐','One Month Free Trial','Experience our services risk free for 30 days'],
               ['👥','30 Min Free Consultation','Expert consultation to understand your needs'],
               ['⭐','24/7 Support','Round the clock support for peace of mind'],
             ].map(([ic,t,d]) => (

@@ -154,25 +154,6 @@ export default function ITServices({ nav }) {
       <section className="section bg-white">
         <div className="container">
 
-          {/* FOR HOME USERS */}
-          <Segment
-            img={IMGS.homeUser}
-            imgRight={true}
-            title="For Home Users"
-            desc="Reliable IT support and smart home solutions for your personal computing needs. Whether you need quick troubleshooting or comprehensive home automation, we've got you covered."
-            checks={['Expert technicians available 24/7', 'Remote and onsite support options']}
-            services={[
-              { icon: '🎧', title: 'Remote IT Support', desc: 'Quick troubleshooting and support from anywhere' },
-              { icon: '👨‍💻', title: 'Onsite IT Support', desc: 'Professional technicians at your location' },
-              { icon: '🏠', title: 'Home Automation', desc: 'Smart home setup and configuration' },
-              { icon: '🔒', title: 'Home Security', desc: 'Security installations and monitoring' },
-              { icon: '📶', title: 'WiFi Setup', desc: 'Optimised network installation' },
-              { icon: '🖨️', title: 'Printer & Peripherals', desc: 'Installation and troubleshooting' },
-            ]}
-          />
-
-          <hr style={{ border: 'none', borderTop: '1px solid #eee', marginBottom: 64 }} />
-
           {/* FOR SMB */}
           <Segment
             img={IMGS.smb}
@@ -223,7 +204,6 @@ export default function ITServices({ nav }) {
           <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }} className="grid-4">
             {[
               ['🛡','Money Back Guarantee','100% satisfaction guaranteed or your money back'],
-              ['🕐','One Month Free Trial','Experience our services risk free for 30 days'],
               ['👥','30 Minute Free','Expert guidance tailored to your specific needs'],
               ['⭐','24/7 Support','Round the clock monitoring and support'],
             ].map(([ic,t,d]) => (
@@ -249,8 +229,8 @@ export default function ITServices({ nav }) {
             Contact us for a free 30-minute consultation with our IT experts
           </p>
           <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a href="tel:+97158571449" className="btn btn-outline-white" style={{ padding: '12px 28px' }}>Call: +971 58 571 4496</a>
-            <a href="mailto:support@safetyworld.ae" className="btn btn-outline-white" style={{ padding: '12px 28px' }}>Email Us</a>
+            <a href="tel:971585714969" className="btn btn-outline-white" style={{ padding: '12px 28px' }}>Call: +971 58 571 4969</a>
+            <a href="mailto:Support@safetyworld.ae" className="btn btn-outline-white" style={{ padding: '12px 28px' }}>Email Us</a>
           </div>
         </motion.div>
       </section>

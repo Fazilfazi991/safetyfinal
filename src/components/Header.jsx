@@ -60,11 +60,11 @@ export default function Header({ nav, page }) {
         {/* Desktop contact */}
         {!mobile && (
           <div style={{ display: 'flex', alignItems: 'center', gap: 20, flexShrink: 0 }}>
-            <a href="tel:+97158571449" style={{ display: 'flex', alignItems: 'center', gap: 5, color: '#444', fontSize: 13, textDecoration: 'none' }}>
-              <span style={{ color: '#f07c1f' }}>📞</span> +971 58 571 4496
+            <a href="tel:971585714969" style={{ display: 'flex', alignItems: 'center', gap: 5, color: '#444', fontSize: 13, textDecoration: 'none' }}>
+              <span style={{ color: '#f07c1f' }}>📞</span> +971 58 571 4969
             </a>
-            <a href="mailto:support@safetyworld.ae" style={{ display: 'flex', alignItems: 'center', gap: 5, color: '#444', fontSize: 13, textDecoration: 'none' }}>
-              <span style={{ color: '#f07c1f' }}>✉</span> support@safetyworld.ae
+            <a href="mailto:Support@safetyworld.ae" style={{ display: 'flex', alignItems: 'center', gap: 5, color: '#444', fontSize: 13, textDecoration: 'none' }}>
+              <span style={{ color: '#f07c1f' }}>✉</span> Support@safetyworld.ae
             </a>
           </div>
         )}
@@ -93,11 +93,11 @@ export default function Header({ nav, page }) {
             }}>{n.label}</button>
           ))}
           <div style={{ marginTop: 16, display: 'flex', flexDirection: 'column', gap: 10 }}>
-            <a href="tel:+97158571449" style={{ color: '#444', fontSize: 14, display: 'flex', gap: 8 }}>
-              <span style={{ color: '#f07c1f' }}>📞</span> +971 58 571 4496
+            <a href="tel:971585714969" style={{ color: '#444', fontSize: 14, display: 'flex', gap: 8 }}>
+              <span style={{ color: '#f07c1f' }}>📞</span> +971 58 571 4969
             </a>
-            <a href="mailto:support@safetyworld.ae" style={{ color: '#444', fontSize: 14, display: 'flex', gap: 8 }}>
-              <span style={{ color: '#f07c1f' }}>✉</span> support@safetyworld.ae
+            <a href="mailto:Support@safetyworld.ae" style={{ color: '#444', fontSize: 14, display: 'flex', gap: 8 }}>
+              <span style={{ color: '#f07c1f' }}>✉</span> Support@safetyworld.ae
             </a>
           </div>
         </div>
