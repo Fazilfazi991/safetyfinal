@@ -42,7 +42,7 @@ export default function Footer({ nav }) {
             {/* IT Services */}
             <div>
               <h4>IT Services</h4>
-              {['Remote IT Support','Onsite IT Support','IT Managed Services','Cyber Security','Cloud Services'].map(t => (
+              {['Remote IT Support','Onsite IT Support','IT Managed Services','Structured Cabling','Cyber Security','Cloud Services'].map(t => (
                 <button key={t} className="footer-link" onClick={() => nav('/it-services')}>{t}</button>
               ))}
             </div>
@@ -58,17 +58,35 @@ export default function Footer({ nav }) {
             {/* Contact */}
             <div>
               <h4>Contact Us</h4>
-              <div className="footer-contact-item">
-                <span className="ic">📞</span>
-                <a href="tel:+97158571449" style={{ color: '#aaa', textDecoration: 'none' }}>+971 58 571 4496</a>
+              <div style={{ marginBottom: 16 }}>
+                <div style={{ fontSize: 13, fontWeight: 700, color: '#f07c1f', marginBottom: 4, textTransform: 'uppercase', letterSpacing: '0.05em' }}>IT Support</div>
+                <div className="footer-contact-item" style={{ marginBottom: 4 }}>
+                  <span className="ic">📞</span>
+                  <a href="tel:971585714969" style={{ color: '#aaa', textDecoration: 'none' }}>+971 58 571 4969</a>
+                </div>
+                <div className="footer-contact-item">
+                  <span className="ic">✉</span>
+                  <a href="mailto:Support@safetyworld.ae" style={{ color: '#aaa', textDecoration: 'none' }}>Support@safetyworld.ae</a>
+                </div>
               </div>
-              <div className="footer-contact-item">
-                <span className="ic">✉</span>
-                <a href="mailto:support@safetyworld.ae" style={{ color: '#aaa', textDecoration: 'none' }}>support@safetyworld.ae</a>
+
+              <div style={{ marginBottom: 16 }}>
+                <div style={{ fontSize: 13, fontWeight: 700, color: '#f07c1f', marginBottom: 4, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Fire & Safety</div>
+                <div className="footer-contact-item" style={{ marginBottom: 4 }}>
+                  <span className="ic">📞</span>
+                  <a href="tel:971555111643" style={{ color: '#aaa', textDecoration: 'none' }}>+971 55 511 1643</a>
+                </div>
+                <div className="footer-contact-item">
+                  <span className="ic">✉</span>
+                  <a href="mailto:info@safetyworld.ae" style={{ color: '#aaa', textDecoration: 'none' }}>info@safetyworld.ae</a>
+                </div>
               </div>
-              <div className="footer-contact-item">
-                <span className="ic">📍</span>
-                <span>Level 38, Media One Tower<br />Dubai Media City<br />PO BOX 454845</span>
+
+              <div>
+                <div className="footer-contact-item">
+                  <span className="ic">📍</span>
+                  <span>Level 38, Media One Tower<br />Dubai Media City, PO BOX 454845</span>
+                </div>
               </div>
             </div>
           </div>

@@ -198,12 +198,13 @@ export default function ITServices({ nav }) {
             imgRight={true}
             title="For Enterprises"
             desc="Enterprise-grade IT infrastructure and strategy consulting. We handle complex IT environments with precision and expertise."
-            checks={['Strategy, planning and advisory', 'Enterprise-scale infrastructure', 'Dedicated support teams']}
+            checks={['Strategy, planning and advisory', 'Enterprise-scale infrastructure', 'Structured cabling & fiber optic', 'Dedicated support teams']}
             services={[
               { icon: '⚙️', title: 'IT Managed Services', desc: 'Enterprise-grade IT management' },
               { icon: '👥', title: 'IT Outsourcing', desc: 'Complete IT operations outsourcing' },
               { icon: '📊', title: 'IT Consultancy', desc: 'Strategic IT planning and consulting' },
               { icon: '🔒', title: 'Enterprise Security', desc: 'Enterprise security infrastructure' },
+              { icon: '🔗', title: 'Structured Cabling', desc: 'Professional voice, data and fiber optic cabling' },
               { icon: '☁️', title: 'Cloud Infrastructure', desc: 'Comprehensive data security solutions' },
               { icon: '🗄️', title: 'Data Centre', desc: 'Secure data centre infrastructure' },
             ]}
