@@ -110,6 +110,27 @@ function FeatureItem({ icon, title, desc }) {
   )
 }
 
+function ContactCard({ title, icon, color, phone, email }) {
+  return (
+    <motion.div variants={staggerItem} style={{ 
+      background: '#fff', border: `1px solid ${color}33`, borderRadius: 12, padding: '24px', 
+      display: 'flex', flexDirection: 'column', gap: 12, position: 'relative', overflow: 'hidden'
+    }}>
+      <div style={{ position: 'absolute', top: 0, left: 0, width: 4, height: '100%', background: color }} />
+      <div style={{ fontSize: 24, marginBottom: 4 }}>{icon}</div>
+      <h3 style={{ fontSize: 18, fontWeight: 700, margin: 0 }}>{title}</h3>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+        <a href={`tel:${phone.replace(/\s+/g, '')}`} style={{ color: '#444', textDecoration: 'none', fontSize: 15, display: 'flex', alignItems: 'center', gap: 8 }}>
+          <span style={{ color: '#f07c1f' }}>📞</span> {phone}
+        </a>
+        <a href={`mailto:${email}`} style={{ color: '#444', textDecoration: 'none', fontSize: 15, display: 'flex', alignItems: 'center', gap: 8 }}>
+          <span style={{ color: '#f07c1f' }}>✉</span> {email}
+        </a>
+      </div>
+    </motion.div>
+  )
+}
+
 function ContactForm() {
   const [form, setForm] = useState({ name:'', email:'', phone:'', company:'', service:'IT Services', message:'' })
   const [sent, setSent] = useState(false)
@@ -416,6 +437,26 @@ export default function Home({ nav }) {
                 onMouseLeave={e => { e.currentTarget.style.borderColor = '#e5e5e5'; e.currentTarget.style.color = '#444' }}
               >{ind}</motion.div>
             ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* ══ QUICK CONTACT ══ */}
+      <section className="section bg-white" style={{ paddingTop: 0 }}>
+        <div className="container">
+          <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }} className="grid-2">
+            <ContactCard 
+              title="IT Support Department" 
+              icon="👨‍💻" color="#0066cc" 
+              phone="+971 58 571 4969" 
+              email="Support@safetyworld.ae" 
+            />
+            <ContactCard 
+              title="Fire & Safety Department" 
+              icon="🛡️" color="#f07c1f" 
+              phone="+971 55 511 1643" 
+              email="info@safetyworld.ae" 
+            />
           </motion.div>
         </div>
       </section>
