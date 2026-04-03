@@ -226,7 +226,7 @@ export default function Home({ nav }) {
           <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" className="grid-3" viewport={{ once: true }}>
             {[
               { icon: '📋', title: 'Company', sub: 'Safety World Technical Services LLC', tag: 'Est. 2009' },
-              { icon: '📍', title: 'Location', sub: 'Al Satwa, Dubai', tag: 'PO Box 53337' },
+              { icon: '📍', title: 'Location', sub: 'Al Satwa, Dubai', tag: 'PO Box 5337' },
               { icon: '💼', title: 'Experience', sub: '15+ Years in Industry', tag: '500+ Projects' },
             ].map(c => (
               <motion.div key={c.title} variants={staggerItem} className="card" style={{ textAlign: 'center', padding: '28px 20px' }}>

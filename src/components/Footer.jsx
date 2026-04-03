@@ -15,10 +15,10 @@ export default function Footer({ nav }) {
           <h2>Ready to Get Started?</h2>
           <p>Contact us today for a free 30-minute consultation with our experts</p>
           <div className="footer-cta-btns">
-            <a href="tel:+97158571449" className="btn btn-outline-white" style={{ padding: '12px 28px' }}>
-              Call Now: +971 58 571 4496
+            <a href="tel:971585714969" className="btn btn-outline-white" style={{ padding: '12px 28px' }}>
+              Call Now: +971 58 571 4969
             </a>
-            <a href="mailto:support@safetyworld.ae" className="btn btn-outline-white" style={{ padding: '12px 28px' }}>
+            <a href="mailto:Support@safetyworld.ae" className="btn btn-outline-white" style={{ padding: '12px 28px' }}>
               Email Us
             </a>
           </div>
@@ -85,7 +85,7 @@ export default function Footer({ nav }) {
               <div>
                 <div className="footer-contact-item">
                   <span className="ic">📍</span>
-                  <span>Level 38, Media One Tower<br />Dubai Media City, PO BOX 454845</span>
+                  <span>PO Box 5337, Al Satwa<br />Dubai, UAE</span>
                 </div>
               </div>
             </div>

@@ -59,13 +59,27 @@ export default function Header({ nav, page }) {
 
         {/* Desktop contact */}
         {!mobile && (
-          <div style={{ display: 'flex', alignItems: 'center', gap: 20, flexShrink: 0 }}>
-            <a href="tel:971585714969" style={{ display: 'flex', alignItems: 'center', gap: 5, color: '#444', fontSize: 13, textDecoration: 'none' }}>
-              <span style={{ color: '#f07c1f' }}>📞</span> +971 58 571 4969
-            </a>
-            <a href="mailto:Support@safetyworld.ae" style={{ display: 'flex', alignItems: 'center', gap: 5, color: '#444', fontSize: 13, textDecoration: 'none' }}>
-              <span style={{ color: '#f07c1f' }}>✉</span> Support@safetyworld.ae
-            </a>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 4, alignItems: 'flex-end', flexShrink: 0 }}>
+            {/* IT Group */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+              <span style={{ fontSize: 10, fontWeight: 700, color: '#f07c1f', textTransform: 'uppercase', letterSpacing: '0.05em' }}>IT Support:</span>
+              <a href="tel:971585714969" style={{ display: 'flex', alignItems: 'center', gap: 4, color: '#444', fontSize: 12, textDecoration: 'none', fontWeight: 500 }}>
+                <span style={{ color: '#f07c1f', fontSize: 13 }}>📞</span> +971 58 571 4969
+              </a>
+              <a href="mailto:Support@safetyworld.ae" style={{ display: 'flex', alignItems: 'center', gap: 4, color: '#444', fontSize: 12, textDecoration: 'none', fontWeight: 500 }}>
+                <span style={{ color: '#f07c1f', fontSize: 13 }}>✉</span> Support@safetyworld.ae
+              </a>
+            </div>
+            {/* Safety Group */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+              <span style={{ fontSize: 10, fontWeight: 700, color: '#f07c1f', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Fire & Safety:</span>
+              <a href="tel:971555111643" style={{ display: 'flex', alignItems: 'center', gap: 4, color: '#444', fontSize: 12, textDecoration: 'none', fontWeight: 500 }}>
+                <span style={{ color: '#f07c1f', fontSize: 13 }}>📞</span> +971 55 511 1643
+              </a>
+              <a href="mailto:info@safetyworld.ae" style={{ display: 'flex', alignItems: 'center', gap: 4, color: '#444', fontSize: 12, textDecoration: 'none', fontWeight: 500 }}>
+                <span style={{ color: '#f07c1f', fontSize: 13 }}>✉</span> info@safetyworld.ae
+              </a>
+            </div>
           </div>
         )}
 
@@ -92,13 +106,25 @@ export default function Header({ nav, page }) {
               cursor: 'pointer', fontFamily: 'Inter,sans-serif',
             }}>{n.label}</button>
           ))}
-          <div style={{ marginTop: 16, display: 'flex', flexDirection: 'column', gap: 10 }}>
-            <a href="tel:971585714969" style={{ color: '#444', fontSize: 14, display: 'flex', gap: 8 }}>
-              <span style={{ color: '#f07c1f' }}>📞</span> +971 58 571 4969
-            </a>
-            <a href="mailto:Support@safetyworld.ae" style={{ color: '#444', fontSize: 14, display: 'flex', gap: 8 }}>
-              <span style={{ color: '#f07c1f' }}>✉</span> Support@safetyworld.ae
-            </a>
+          <div style={{ marginTop: 16, display: 'flex', flexDirection: 'column', gap: 12 }}>
+            <div style={{ borderBottom: '1px solid #f0f0f0', pb: 8, mb: 4 }}>
+              <div style={{ fontSize: 10, fontWeight: 700, color: '#f07c1f', textTransform: 'uppercase', mb: 6 }}>IT Support</div>
+              <a href="tel:971585714969" style={{ color: '#444', fontSize: 14, display: 'flex', gap: 8, mb: 6 }}>
+                <span style={{ color: '#f07c1f' }}>📞</span> +971 58 571 4969
+              </a>
+              <a href="mailto:Support@safetyworld.ae" style={{ color: '#444', fontSize: 14, display: 'flex', gap: 8 }}>
+                <span style={{ color: '#f07c1f' }}>✉</span> Support@safetyworld.ae
+              </a>
+            </div>
+            <div>
+              <div style={{ fontSize: 10, fontWeight: 700, color: '#f07c1f', textTransform: 'uppercase', mb: 6 }}>Fire & Safety</div>
+              <a href="tel:971555111643" style={{ color: '#444', fontSize: 14, display: 'flex', gap: 8, mb: 6 }}>
+                <span style={{ color: '#f07c1f' }}>📞</span> +971 55 511 1643
+              </a>
+              <a href="mailto:info@safetyworld.ae" style={{ color: '#444', fontSize: 14, display: 'flex', gap: 8 }}>
+                <span style={{ color: '#f07c1f' }}>✉</span> info@safetyworld.ae
+              </a>
+            </div>
           </div>
         </div>
       )}
