@@ -81,6 +81,35 @@ function ServiceCard({ img, title, desc, nav, path }) {
   )
 }
 
+function BenefitCard({ icon, title, desc, color }) {
+  return (
+    <motion.div variants={staggerItem} className="benefit-card" style={{ 
+      background: color, color: '#fff', borderRadius: 12, padding: '24px 20px', 
+      textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12,
+      boxShadow: '0 8px 24px rgba(0,0,0,0.1)'
+    }}>
+      <div style={{ fontSize: 32 }}>{icon}</div>
+      <div style={{ fontWeight: 700, fontSize: 15, lineHeight: 1.2 }}>{title}</div>
+      <div style={{ fontSize: 13, opacity: 0.9 }}>{desc}</div>
+    </motion.div>
+  )
+}
+
+function FeatureItem({ icon, title, desc }) {
+  return (
+    <motion.div variants={staggerItem} style={{ 
+      display: 'grid', gridTemplateColumns: '48px 1fr', gap: 16, padding: '20px 0', 
+      borderBottom: '1px solid #efefef'
+    }}>
+      <div style={{ fontSize: 24, color: '#f07c1f' }}>{icon}</div>
+      <div>
+        <div style={{ fontWeight: 700, fontSize: 15, marginBottom: 4, color: '#333' }}>{title}</div>
+        <div style={{ fontSize: 13, color: '#777', lineHeight: 1.5 }}>{desc}</div>
+      </div>
+    </motion.div>
+  )
+}
+
 function ContactForm() {
   const [form, setForm] = useState({ name:'', email:'', phone:'', company:'', service:'IT Services', message:'' })
   const [sent, setSent] = useState(false)
@@ -244,7 +273,69 @@ export default function Home({ nav }) {
         </div>
       </section>
 
-      {/* ══ TRUSTED BY ══ */}
+      {/* ══ MANAGED IT AMC SECTION ══ */}
+      <section className="section bg-white">
+        <div className="container">
+          <motion.div initial="hidden" whileInView="visible" variants={fadeIn} viewport={{ once: true }}>
+            <div style={{ width: 44, height: 4, background: '#0066cc', marginBottom: 20 }} />
+            <h2 className="section-title" style={{ textAlign: 'left', margin: '0 0 16px' }}>Managed IT AMC Service Provider in Dubai</h2>
+            <div style={{ maxWidth: 800, marginBottom: 48 }}>
+              <p style={{ fontSize: 14, color: '#666', lineHeight: 1.8, marginBottom: 16 }}>
+                Safety World has a team of highly experienced, friendly professionals working to provide cost-effective, secure, and scalable IT AMC in Dubai. With our fast and reliable IT AMC Services and Solutions, you can access a range of services, from outsourcing single element support to full infrastructure updates.
+              </p>
+              <p style={{ fontSize: 14, color: '#666', lineHeight: 1.8, marginBottom: 16 }}>
+                Whether its system security, support, or maintenance, we tailor our IT AMC solutions (to scale and budget) for businesses everywhere in Dubai. Our clients from across the field — commercial, manufacturing, leisure, and public sector — use our IT specialists to regulate an efficient and proactive work environment.
+              </p>
+              <p style={{ fontSize: 14, color: '#666', lineHeight: 1.8 }}>
+                For almost a decade, Safety World has managed to offer professional and commercially viable IT AMC services in Dubai. These services are easy to use and provide full coverage for all your future IT AMC-related inquiries/issues.
+              </p>
+            </div>
+          </motion.div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 0.8fr', gap: 64 }} className="fire-split">
+            {/* Features list */}
+            <div>
+              <h3 style={{ fontSize: 22, fontWeight: 800, marginBottom: 32, color: '#0066cc' }}>Our IT AMC Service Features</h3>
+              <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+                <FeatureItem icon="⏲️" title="Guaranteed 10-minute Response Time for Expert Support" desc="Our expert engineers work on your IT issues within 10 minutes" />
+                <FeatureItem icon="🔔" title="24/7 Monitoring and Fully Managed IT Support" desc="Our professional team monitoring your IT network, to ensure lasting efficiency and quick solutions whenever required." />
+                <FeatureItem icon="⚙️" title="Proactive Maintenance and Monitoring" desc="We proactively apply patches, updates and fixes in the background, so you don't have to wait for actual issues arise." />
+                <FeatureItem icon="👨‍💼" title="IT Manager and Dedicated Engineer Support" desc="With our IT AMC solutions, a dedicated manager and engineer ensures that all your legal and regulatory requirements as well as responsibilities are met to avoid any future risk to you or your business." />
+                <FeatureItem icon="🛡️" title="Cybersecurity and IT Policies" desc="We implement a system-side security strategy to protect your IT business network from security risks such as malware, spam, intrusion, etc." />
+                <FeatureItem icon="📁" title="Data Backup and Recovery" desc="Our IT AMC solutions ensure year around backup and recovery services that are tailored to your business scale and data requirements." />
+              </motion.div>
+            </div>
+
+            {/* Benefits and Similar Services */}
+            <div>
+              <h3 style={{ fontSize: 22, fontWeight: 800, marginBottom: 32, color: '#0066cc' }}>IT AMC Service Benefits</h3>
+              <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
+                <BenefitCard icon="🔒" title="Protect Your Data" desc="Ensure your data remains safe" color="#00c853" />
+                <BenefitCard icon="📉" title="Minimize IT Issues" desc="Reduce system downtime" color="#ff5252" />
+                <BenefitCard icon="🛡️" title="IT security Tightening" desc="Enhance security protocols" color="#ffab00" />
+                <BenefitCard icon="💰" title="Reduce IT Costs" desc="Optimize your budget" color="#00b0ff" />
+              </motion.div>
+
+              <div style={{ marginTop: 40, background: '#007cc2', borderRadius: 12, padding: '32px 24px', color: '#fff' }}>
+                <div style={{ width: 32, height: 3, background: '#fff', marginBottom: 12 }} />
+                <h3 style={{ fontSize: 24, fontWeight: 800, marginBottom: 24 }}>Similar Services</h3>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24 }}>
+                  {[
+                    ['🤝','IT AMC Contract'],['📄','Managed IT Services'],
+                    ['🔄','Changing IT AMC Service Provider?'],['👥','IT Outsourcing'],
+                    ['🏗️','Featured Industries'],['❓','Frequently Asked Questions']
+                  ].map(([ic, t]) => (
+                    <div key={t} style={{ display: 'flex', flexDirection: 'column', gap: 8, cursor: 'pointer' }}>
+                      <div style={{ fontSize: 24 }}>{ic}</div>
+                      <div style={{ fontSize: 13, fontWeight: 600, lineHeight: 1.3 }}>{t}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="section bg-white">
         <div className="container">
           <motion.div initial="hidden" whileInView="visible" variants={fadeIn} viewport={{ once: true }}>
